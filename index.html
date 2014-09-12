@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+	 	<title>BREZELfest: Discover Flickr</title>
+		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width">
+		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<noscript>
+		<div id="error">
+		<img style="weight: 150px;" src="http://s3.amazonaws.com/ragefaces/7698df1628db28a5835d49828067ae00.png">
+		<p>BREZELfest says: </p>
+		<p><i>"This site uses JavaScript, but it appears that your browser has JavaScript turned off and the site may not work as expected. To resolve this please enable JavaScript and restart your web browser."</i></p>
+		</div>
+	</noscript>
+	<body>
+		<header>
+			<div class="content">
+				<div class="logo" onclick="scroll(0,0)"></div>
+				<div class="description" onclick="scroll(0,0)"><span>BREZELfest:</span> 
+				<span class="unterline">discover flickr pics .. the new way</span></div>
+				<div class="search">
+					<form name="search" action="" >
+						<input type="text" name="searchtext">
+						<input class="go" type="submit" value=""  onclick="searchText(this.form.searchtext.value)">
+					</form>
+				</div>
+			</div>
+		</header>
+		<div id="wrapper">
+				<div id="photos"></div>
+		</div>
+
+		<footer></footer>	
+	</body>
+
+</html>

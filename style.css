@@ -1,0 +1,456 @@
+/* Import Font von Google */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Rouge+Script);
+
+* {
+	margin: 0;
+}
+
+body{
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	text-align: center;
+	width:auto;
+	color:#515958;
+	/*background: #35332f; */
+	background: #cccccc; 
+}
+
+noscript{
+	margin:0 200px auto;
+	background: #FFFFFF;
+	width: 300px;
+	z-index:10;
+	font-size:25px;
+	color:#EEEEEE;
+	text-shadow: 1px 1px #0b4678, -1px -1px #0b4678;
+}
+
+noscript #error{
+	background:#4D4D4D;
+	-moz-box-shadow: 1px 2px 5px #474747;
+	-webkit-box-shadow: 1px 2px 5px #474747;
+	box-shadow: 1px 2px 5px #474747;
+	border-radius: 15px;
+	border:5px solid #515151;
+	padding:5px;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+noscript #error img{
+	background: none repeat scroll 0 0 white;
+	-moz-box-shadow: 1px 2px 5px #474747;
+	-webkit-box-shadow: 1px 2px 5px #474747;
+	box-shadow: 1px 2px 5px #474747;
+	float:left;
+	border:5px solid #FFFFFF;
+	border-radius: 15px;
+}
+
+noscript #error i{
+	text-align:left;
+	color:#91c7f4;
+}
+
+
+header{
+	-webkit-transition: all 0.2s ease-in-out 0.2s; 
+	-moz-transition: all 0.2s ease-in-out 0.2s; 
+	-o-transition: all 0.2s ease-in-out 0.2s;
+	opacity: 0.8; 
+	top:0px;
+	position:fixed;
+	height: 30px;
+	width: 100%;
+
+	background:#4D4D4D;
+	z-index: 15;
+	border-bottom:5px solid #c9c9c9;
+	-moz-box-shadow: 1px 2px 5px #888;
+	-webkit-box-shadow: 1px 2px 5px #888;
+	box-shadow: 1px 2px 5px #888;
+}
+
+header:hover{
+	-webkit-transition: all 0.2s ease-in-out 0.2s; 
+	-moz-transition: all 0.2s ease-in-out 0.2s; 
+	-o-transition: all 0.2s ease-in-out 0.2s;
+	opacity: 1.0;
+}
+
+header .content{
+	width:600px;
+	color: #FFFFFF;
+	padding:5px;
+	margin: 0 auto;
+	font-weight: Bold;
+}
+
+header .content .logo{
+	float:left;
+	opacity: 0.3; 
+	height: 79px;
+	width:100px;
+	background: url('img/logo.png') 0px center no-repeat;
+	-webkit-transition: all 0.2s ease-in-out 0.2s; 
+	-moz-transition: all 0.2s ease-in-out 0.2s; 
+	-o-transition: all 0.2s ease-in-out 0.2s;
+}
+
+
+header .content .description {
+	float:left;
+	-webkit-transition: all 0.2s ease-in-out 0.2s; 
+	-moz-transition: all 0.2s ease-in-out 0.2s; 
+	-o-transition: all 0.2s ease-in-out 0.2s;
+}
+
+header .content .description:hover{
+	cursor: pointer;
+	color:#ffcc88;
+}
+
+header .content .description span {
+	font-size:20px;
+}
+
+header .content .description .unterline {
+	font-size:10px;
+}
+header .content .logo:hover {
+	opacity: 1; 
+	-webkit-transition: all 0.2s ease-in-out 0.2s; 
+	-moz-transition: all 0.2s ease-in-out 0.2s; 
+	-o-transition: all 0.2s ease-in-out 0.2s;
+	cursor: pointer;
+}
+header .content .search {
+	float:left;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #c9c9c9;
+	padding:0 5px 0 0px;
+	background:#FFFFFF;
+	color:#412b0e;
+	box-shadow: 1px 2px 5px #888;
+	margin-left: 10px;
+	}
+
+header .content .search input, textarea{
+	border:none;
+}
+
+header .content .search .go {
+	text-indent: 9999;
+	visible:hidden;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background:#FFFFFF url('img/such.png') 5px center no-repeat;
+}
+
+header .content .search .go:hover {
+	cursor: pointer;
+	
+	background:#f5bb5b url('img/such.png') 5px center no-repeat;;
+}
+#wrapper {
+	position: relative;
+	margin: 0 auto;
+	display:block;
+	padding-bottom: 20px;
+	
+	padding:0 0 100px 0;
+}
+
+h1{
+	color: #313131;
+	
+}
+
+#searchfor {
+	padding-top:20px;
+	white-space: wrap;
+	font-family: 'Rouge Script', Arial, sans-serif;
+	font-size: 50px;
+	text-shadow: #c0c0c0 3px 3px 5px;
+}
+
+footer{
+	position:fixed;
+	height: 50px;
+    bottom:0px;
+	width: 100%;
+	background:-moz-linear-gradient(top, rgba(255, 255, 255, 0) 0% ,rgba(255, 255, 255, 1.0) 100%); /* Firefox */
+	background:-webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0% ,rgba(255, 255, 255, 1.0) 100%); 
+	background:-o-linear-gradient(top, #fff, #adf); /* Opera */
+	background:-ms-linear-gradient(top, #fff, #adf); /* IE */
+	background:linear-gradient(top, #fff, #adf); /* W3C Standard */
+	z-index:1;
+}
+
+footer div#furthermore, div#furthermore a {
+	padding-right:10px;
+	float:right;
+	bottom:5px;
+	display: block;
+	width:50px;
+	height:50px;
+	font-size:25px;
+	color:#000;
+	-webkit-transition: all 0.2s ease-in-out 0.2s; 
+	-moz-transition: all 0.2s ease-in-out 0.2s; 
+	-o-transition: all 0.2s ease-in-out 0.2s;
+	opacity: 1; 
+	text-decoration:none;
+}
+
+footer div#furthemore a:hover {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #c9c9c9;
+
+}
+#footer div#forthemore:hover {
+	opacity: 0.9; 
+	z-index: 3;
+
+}
+
+#theend {
+	white-space: wrap;
+	font-family: 'Rouge Script', Arial, sans-serif;
+	clear: left;
+	font-size: 50px;
+	text-shadow: #c0c0c0 3px 3px 5px;
+}
+
+#theend a{
+	opacity: 0.5; 
+	-webkit-transition: all 0.2s ease-in-out 0.2s; 
+	-moz-transition: all 0.2s ease-in-out 0.2s; 
+	-o-transition: all 0.2s ease-in-out 0.2s;
+	color:#2c6dff;
+	text-decoration:none;
+	z-index:1;
+}
+
+#theend a:hover{
+	opacity: 0.9; 
+}
+
+#theend .button a {
+	font-weight:bold;
+	width:250px;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+	background: #272123;
+	color:#ffffff;
+	padding:2px;
+	text-shadow:none;
+	-moz-box-shadow: 1px 2px 5px #888;
+	-webkit-box-shadow: 1px 2px 5px #888;
+	box-shadow: 1px 2px 5px #888;
+	margin:0 20px 0 20px;
+}
+
+#photos{
+	padding-top:25px;
+	margin:0 auto;
+	max-width:1650px;
+}
+
+
+#photos .image{
+	display: inline-block;
+	position: relative;
+	background: #fffff3;
+	margin:10px;
+	padding:5px !important;
+	-moz-box-shadow: 5px 5px 5px #888;
+	-webkit-box-shadow: 5px 5px 5px #888;
+	box-shadow: 5px 5px 5px #888;
+
+	
+}
+
+#imageBox{
+	display: inline-block;
+}
+
+.image-container .share{
+	border-top:1px solid #CCCCCC;
+	opacity: 0.6; 
+	background:none!important;
+	text-align: center!important;
+	z-index:16!important;
+}
+
+#photos .share{
+	text-align:left;
+	position: relative;
+	padding-top:3px;
+	bottom: 34px;
+	left: 0px;
+	width: 100%;
+	background: #313131;
+	color: #ffffff;
+	opacity: 0.3; 
+	height:25px;
+	border-top:1px solid #9C9C9C;
+	-webkit-transition: all 0.2s ease-in-out 0.2s; 
+	-moz-transition: all 0.2s ease-in-out 0.2s; 
+	-o-transition: all 0.2s ease-in-out 0.2s;
+}
+
+.image-container{
+	-webkit-transition: all 0.2s ease-in-out 0.2s; 
+	-moz-transition: all 0.2s ease-in-out 0.2s; 
+	-o-transition: all 0.2s ease-in-out 0.2s;
+	position: fixed;
+	/*background: rgba(0,0,0,0.8);*/
+	background: rgb(69,72,77); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, rgba(69,72,77,1) 0%, rgba(0,0,0,0.99) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(69,72,77,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+	background: radial-gradient(center, ellipse cover, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left:0;
+	z-index:16;
+}
+
+.image-container img{
+	cursor: pointer;
+	border:10px solid #090707;
+	-webkit-transition: all 0.2s ease-in-out 0.2s; 
+	-moz-transition: all 0.2s ease-in-out 0.2s; 
+	-o-transition: all 0.2s ease-in-out 0.2s;
+	margin: 10% auto;
+	display:block;
+	-moz-box-shadow: 5px 0px 5px #0E0303;
+	-webkit-box-shadow: 0px 0px 5px #0E0303;
+	box-shadow: 0px 0px 5px #0E0303;
+}
+
+.image-container img:hover{
+	background:#FFFFFF;
+}
+
+#photos img {
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease-in-out 0.2s; 
+	-moz-transition: all 0.2s ease-in-out 0.2s; 
+	-o-transition: all 0.2s ease-in-out 0.2s;
+}
+
+
+
+#photos .share:hover{
+	opacity: 0.9; 
+	-webkit-transition: all 0.2s ease-in-out 0.2s; 
+	-moz-transition: all 0.2s ease-in-out 0.2s; 
+	-o-transition: all 0.2s ease-in-out 0.2s;
+	border-top:1px solid #9C9C9C;
+}
+
+#photos .share span{
+	text-align:left;
+}
+
+
+#photos .share span.front{
+	padding-left:5px;
+	font-weight: Bold;
+	opacity: 1.0; 
+}
+
+#photos .share span a, span, a:visited{
+	color:#ffffff;
+	text-decoration: none;
+}
+#photos .share span a:hover{
+	text-decoration: underline;
+}
+
+/*
+Social Network Icon Pack by Komodo Media, Rogie King is licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License.
+Based on a work at www.komodomedia.com.
+*/
+#photos .share .facebook{
+	padding: 2px 5px 2px 20px;
+    background: url('img/facebook.png') 0px center no-repeat;
+    border: 0px solid #ccc;
+}
+
+#photos .share .twitter {
+    padding: 2px 5px 2px 20px;
+    background: url('img/twitter.png') 0px center no-repeat;
+    border: 0px solid #ccc;
+  }
+
+#photos .share .flickr {
+	padding: 2px 5px 2px 20px;
+    background: url('img/flickr.png') 0px center no-repeat;
+    border: 0px solid #ccc;
+	
+
+}
+
+/* Smartphone weiche */
+@media (max-width:480px) {
+
+	header {
+		height:40px!important;
+	}
+
+	header .content {
+		position: fixed;
+		with:100%!important;
+		padding-left:2px;
+		height:10px;
+		
+	}
+
+	header .content .logo{
+		float:left;
+		opacity: 1!important; 
+		height: 40px;
+		width:50px;
+		background: url('img/logo_50.png') 0px center no-repeat;
+	}
+
+	header .content .search input, textarea{
+		width: 60px!important; 
+	}
+
+	#photos .image {
+		margin:none!important;;
+		margin-bottom:5px!important;
+		padding-top:30px!important;
+	}
+
+	#photos img {
+		margin-left: 0px !important;
+		width: 300px !important;
+		height: auto !important;
+	}
+
+	#photos .share{
+		font-size:10px;
+		opacity: 1!important;
+	}
+
+	header .content .description .unterline {
+		display:none!important;
+	}
+
+	#theend {
+		font-size:30px;
+	}
+}
